@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system;
+    outline: none;
+}
+body {
+    background-color: black;
+
+}
+
+form {
+    width: 1000px;
+    height: 1000px;
+}
+
+.header label h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    border: white solid 5px;
+    padding: 0;
+    width: 500px;
+}
+
+.enter {
+    margin: 12.5px;
+    width: 600px;
+    height: 125px;
+    border: white solid 5px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    outline: none;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.enter::placeholder {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.calculator {
+
+    margin-top: 50px;
+    height: 565px;
+    width: 565px;
+
+
+}
+.center {
+    margin: 0 auto;
+}
+
+
+.center2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button {
+    width: 125px;
+    background-color: black;
+    font-size: 50px;
+    color: white;
+    height: 125px;
+    margin: 5px;
+    border: white solid 5px;
+    border-radius: 15px;
+}
+
+
+
+
+.double-button {
+    width: 265px;
+    background-color: black;
+    font-size: 50px;
+    color: white;
+    height: 125px;
+    border: white solid 5px;
+    outline: none;
+    border-radius: 15px;
+    margin: 5px;
+
+
+}
+
+.button-hover:hover {
+    color: black;
+    background-color: white;
+}
+
+
+#del:hover {
+    color: white;
+    background-color: #ffb100;
+}
+
+#c:hover {
+    color: white;
+    background-color: red;
+}
+
+
+.enter::placeholder {
+    color: white;
+}
+
+.enter::-moz-placeholder {
+    color: white;
+    opacity: 1;
+}
