@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: -apple-system;
     outline: none;
 }
 body {
@@ -23,7 +22,7 @@ form {
 }
 
 .enter {
-    margin: 12.5px;
+    margin: 13px;
     width: 600px;
     height: 125px;
     border: white solid 5px;
@@ -31,7 +30,6 @@ form {
     background-color: black;
     color: white;
     font-size: 40px;
-    outline: none;
     padding: 30px;
     text-align: center;
 
@@ -47,8 +45,9 @@ form {
 .calculator {
 
     margin-top: 50px;
-    height: 565px;
-    width: 565px;
+    height: 670px;
+    width: 555px;
+
 
 
 }
