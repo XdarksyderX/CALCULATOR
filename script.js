@@ -14,8 +14,12 @@ const mult = document.getElementById('x');
 const div = document.getElementById(':');
 const c = document.getElementById('c');
 const del = document.getElementById('del');
-const equal = document.getElementById('equal')
-let keys = [one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, mult, div, c, del];
+const equal = document.getElementById('equal');
+const point = document.getElementById('.');
+const root = document.getElementById('root');
+const p1 = document.getElementById('(');
+const p2 = document.getElementById(')')
+let keys = [one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, mult, div, root, point, p1, p2, c, del];
 let message = document.getElementById('enter');
 let tempMessage = ""
 
@@ -25,18 +29,19 @@ for (let i = 0; i < keys.length - 2; i++) {
         console.log(j.value)
         switch (j.value) {
             case 'x':
-                tempMessage += '*';
-                message.value = tempMessage;
+                message.value += '*';
                 break;
 
             case ':':
-                tempMessage += '/';
-                message.value = tempMessage;
+                message.value += '/';
+                break;
+
+            case '√':
+                message.value += '√(';
                 break;
 
             default:
-                tempMessage += j.value
-                message.value = tempMessage
+                message.value += j.value;
                 break;
 
         }
@@ -50,16 +55,26 @@ c.addEventListener('click', function (event) {
 })
 
 del.addEventListener('click', function (event) {
-    tempMessageList = tempMessage.split('')
-    tempMessageList.pop()
-    tempMessage = tempMessageList.join("")
-    message.value = tempMessage
+    message.value = message.value.split('')
+    message.value.pop()
+    message.value = tempMessageList.join("")
 
 
 })
 
 equal.addEventListener('click', function (event) {
-    result = eval(tempMessage)
-    tempMessage = result
-    message.value = result
+    let messageTempResult = message.value.split('')
+
+    for (let i = 0; i < messageTempResult.length; i++) {
+        if (messageTempResult[i] === '√')
+        {
+            messageTempResult[i] = 'Math.sqrt'
+        }
+
+    }
+
+    console.log(messageTempResult)
+    messageTempResult = messageTempResult.join('')
+    console.log(messageTempResult)
+    message.value = eval(messageTempResult)
 })
