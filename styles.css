@@ -3,6 +3,8 @@
     outline: none;
 }
 body {
+    display: flex;
+    justify-content: center;
     background-color: black;
 
 }
@@ -126,4 +128,12 @@ form {
 #equal
 {
     width: 380px;
+}
+
+img {
+    position: absolute;
+    top: -50px;
+    width: 1250px;
+    height: 750px;
+    visibility: hidden;
 }

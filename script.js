@@ -77,4 +77,20 @@ equal.addEventListener('click', function (event) {
     messageTempResult = messageTempResult.join('')
     console.log(messageTempResult)
     message.value = eval(messageTempResult)
+
+    if (message.value === '777978')
+    {
+        let audio = new Audio('./media/music.mp3')
+        let timer = 70000;
+        let audio2 = new Audio('./media/audio.ogg')
+        let gif = document.getElementById('gif')
+        audio.play()
+        setTimeout(function() {
+            audio2.play();
+            gif.style.visibility = 'visible';
+
+        }, timer);
+
+
+    }
 })
