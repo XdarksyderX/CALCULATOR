@@ -8,29 +8,29 @@ body {
 }
 
 form {
-    width: 1000px;
-    height: 1000px;
+    width: 667px;
+    height: 667px;
 }
 
 .header label h1{
-    font-size: 60px;
+    font-size: 40px;
     color: white;
     text-align: center;
-    border: white solid 5px;
+    border: white solid 3px;
     padding: 0;
-    width: 500px;
+    width: 334px;
 }
 
 .enter {
-    margin: 13px;
-    width: 600px;
-    height: 125px;
+    margin: 8.6px;
+    width: 400px;
+    height: 84px;
     border: white solid 5px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: black;
     color: white;
-    font-size: 40px;
-    padding: 30px;
+    font-size: 27px;
+    padding: 20px;
     text-align: center;
 
 }
@@ -38,15 +38,15 @@ form {
 .enter::placeholder {
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 34px;
 }
 
 
 .calculator {
 
-    margin-top: 50px;
-    height: 670px;
-    width: 555px;
+    margin-top: 34px;
+    height: 447px;
+    width: 389px;
 
 
 
@@ -64,11 +64,11 @@ form {
 }
 
 .button {
-    width: 125px;
+    width: 84px;
     background-color: black;
-    font-size: 50px;
+    font-size: 34px;
     color: white;
-    height: 125px;
+    height: 84px;
     margin: 5px;
     border: white solid 5px;
     border-radius: 15px;
@@ -78,11 +78,11 @@ form {
 
 
 .double-button {
-    width: 265px;
+    width: 182px;
     background-color: black;
-    font-size: 50px;
+    font-size: 34px;
     color: white;
-    height: 125px;
+    height: 84px;
     border: white solid 5px;
     outline: none;
     border-radius: 15px;
@@ -115,4 +115,15 @@ form {
 .enter::-moz-placeholder {
     color: white;
     opacity: 1;
+}
+
+
+.equal-div {
+    display: flex;
+    justify-content: center;
+}
+
+#equal
+{
+    width: 380px;
 }
